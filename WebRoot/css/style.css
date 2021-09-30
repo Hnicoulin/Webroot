@@ -1,0 +1,70 @@
+/*@font-face {
+  font-family: Tropical Forest;
+  src: url(fonts.cdnfonts.com/css/tropical-forest.woff);
+}*/
+
+h3,p {
+    /*font-family: Tropical Forest; wont load*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-align: center;
+    
+  }
+  img{
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    /*padding: 40px ;*/
+    /*float:left;*/
+    max-width: 150px;
+    max-height: 150px;
+  animation: rotation 10s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+  
+  /*#photodiv{
+    float: left;
+    background-color: blue;
+   
+  }
+  #haleyinfo{
+    background-color: pink;
+    float:right;
+  }*/
+  
+  #photodiv {
+     grid-area: picture; 
+     }
+  
+  #haleyinfo { grid-area: info; }
+  
+  .daddydiv {
+    display: grid;
+    grid-template-areas:
+      
+      'picture  info info'
+      'picture  info info'
+      'picture  info info';
+    grid-gap: 10px;
+    background-color:mediumaquamarine;
+    padding: 10px;
+  }
+  
+  .daddydiv > div {
+    /*background-image: url(img/beach-img.jpg); would not load*/
+    background-color: pink;
+    text-align: left;
+  
+    padding: 20px ;
+    font-size: 20px;
+  }
+  
+  
